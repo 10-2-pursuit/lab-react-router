@@ -26,20 +26,19 @@ function App() {
   const [pets] = useState(petData);
 
   return (
-    <div className="wrapper">
+    <BrowserRouter>
       <Nav />
-      <BrowserRouter>
-        <Routes>
-          <Route
-            path="/"
-            element={<Home employees={employees} owners={owners} pets={pets} />}
-          />
-          <Route path="/staff" element={<StaffList employees={employees} />} />
-          <Route path="/pets" element={<PetsList pets={pets} />} />
-        </Routes>
-      </BrowserRouter>
+      <Routes>
+        <Route
+          path="/"
+          element={<Home employees={employees} owners={owners} pets={pets} />}
+        />
+        <Route path="/staff" element={<StaffList employees={employees} />} />
+        <Route path="/pets" element={<PetsList pets={pets} />} />
+        <Route path="/pets/:type" element={<PetsList pets={pets} />} />
+      </Routes>
       <Footer />
-    </div>
+    </BrowserRouter>
   );
 }
 
