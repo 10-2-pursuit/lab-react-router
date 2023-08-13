@@ -22,8 +22,7 @@ In this lab you will add routing to an animal hospital's website using React Rou
 
 1. Deploy this application to Netlify and add the link to your netlify site below:
 
-- [MY LIVE SITE URL]()
-
+- [MY LIVE SITE URL](https://lively-hamster-6a42bb.netlify.app/)
 
 ## Instructions
 
