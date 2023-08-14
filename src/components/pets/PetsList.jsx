@@ -7,7 +7,7 @@ import { Link, useParams } from "react-router-dom";
 export const PetsList = ({ pets }) => {
   const params = useParams();
   const { kind } = params
-  debugger
+
   const [cats, dogs] = pets.reduce(
     (acc, pet) => {
       const position = pet.kind === "Cat" ? 0 : 1;
